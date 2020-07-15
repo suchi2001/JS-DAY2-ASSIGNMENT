@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		Get the current date
+	</title> 
+</head> 
+
+<body> 
+	<h1>GET THE CURRENT DATE</h1>
+
+
+		Current Date of dd/mm/yyyy=>
+
+		<span class="currDate"></span> 
+
+	<script type="text/javascript"> 
+			let currDate = 
+				new Date().toLocaleDateString('en-GB'); 
+
+			let inputDate = new Date(); 
+
+			document.querySelector('.currDate').textContent 
+					= currDate; 
+
+			document.querySelector('#dateInput').valueAsDate 
+					= inputDate; 
+	</script> 
+</body> 
+
+</html>					 
